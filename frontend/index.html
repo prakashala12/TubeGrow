@@ -1070,7 +1070,7 @@ function extractKeywords(comments) {
     .map(([word]) => word);
 }
 
-function buildAnalysisMarkupFromData(videoId, comments, source = "live", metadata = {}) {
+function buildAnalysisMarkupFromData(videoId, comments, metadata = {}, source = "live") {
   const allComments = comments
     .map((comment) => ({
       name: comment.authorName || "Anonymous",
